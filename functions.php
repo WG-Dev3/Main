@@ -183,3 +183,5 @@ function handle_ajax_request() {
 add_action( 'wp_ajax_wg_ajax_action', 'handle_ajax_request' );
 add_action( 'wp_ajax_nopriv_wg_ajax_action', 'handle_ajax_request' );
 
+
+
