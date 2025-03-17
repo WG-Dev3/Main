@@ -1,0 +1,175 @@
+/*
+Theme Name: Hello Elementor Child
+Theme URI: https://elementor.com/hello-theme/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash
+Template: hello-elementor
+Author: Elementor Team
+Author URI: https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash
+Description: Hello Elementor is a lightweight and minimalist WordPress theme that was built specifically to work seamlessly with the Elementor site builder plugin. The theme is free, open-source, and designed for users who want a flexible, easy-to-use, and customizable website. The theme, which is optimized for performance, provides a solid foundation for users to build their own unique designs using the Elementor drag-and-drop site builder. Its simplicity and flexibility make it a great choice for both beginners and experienced Web Creators.
+Tags: accessibility-ready,flexible-header,custom-colors,custom-menu,custom-logo,featured-images,rtl-language-support,threaded-comments,translation-ready
+Version: 3.1.0.1720606616
+Updated: 2024-07-10 10:16:56
+
+*/
+
+.span_heading .elementor-heading-title span {
+    color: #1158fe;
+}
+.full_line .counter_reset:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, #1158fe);
+}
+/* Initialize the counter on the parent element */
+.counter_reset {
+    counter-reset: section-counter; /* Reset the counter */
+}
+/* Style and increment the counter for each .heading_counter */
+.heading_counter::before {
+    counter-increment: section-counter;
+    content: counter(section-counter);
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    background-color: #1158fe;
+    border-radius: 50%;
+    line-height: 95px;
+    font-size: 50px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    top: 8px;
+    left: -146px;
+}
+.heading_counter::after {
+    content: '';
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border: 2px dashed #9D9D9D;
+    border-radius: 50%;
+    top: 0;
+    left: -154px;
+}
+.services_faq_section .elementor-accordion {
+    display: grid;
+    gap: 15px;
+}
+.services_faq_section .elementor-accordion .elementor-accordion-item {
+    border-bottom: 3px solid #1158FE !important;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px 0px rgba(232, 232, 232, 0.50);
+}
+
+.user-profile-page {
+    margin-bottom: 50px;
+}
+section.user_profile_header {
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+}
+section.user_profile_header h1 {
+    text-transform: capitalize;
+}
+section.user_profile_product {
+    margin: 50px 0px;
+}
+section.user_profile_product ul {
+    padding: 0px;
+    list-style: none;
+    display: grid;
+    gap: 20px;
+}
+section.user_profile_product ul li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	align-items: center;
+}
+section.user_profile_product ul li .product_image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+section.user_profile_product ul li .product_content {
+    padding: 20px;
+}
+section.user_profile_product ul li .product_content a.product_btn {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+    padding: 5px 20px;
+}
+section.user_profile_product ul li .product_content a.product_btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+.user-profile-page #message {
+    background-color: lightgreen;
+    padding: 5px 15px;
+}
+.user-profile-page #message p {
+    margin: 0px;
+}
+@media only screen and (max-width: 767px) {
+	section.user_profile_product ul li {
+		grid-template-columns: 1fr;
+	}
+	section.user_profile_product ul li .product_content {
+		padding-top: 0px;
+	}
+}
+
+body .card-list {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+body .card-list img {
+    display: block;
+    min-height: 240px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+body .card-list .post-title {
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+body .card-list .card-image {
+    display: block;
+    margin-bottom: 24px;
+}
+body .card-list p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.search-wrapper {
+    margin-bottom: 30px;
+    text-align: end;
+    width: 100%;
+}
+.search-wrapper input {
+    width: 40%;
+    outline: none;
+}
+
+.error-message {
+    position: relative;
+    padding: .75rem 1.25rem;
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
